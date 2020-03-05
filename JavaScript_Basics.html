@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Calculator !!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm fixed-top py+1">
+            <a class="nav-brand" href="index.html">
+                <img src="images.jpg" class="float-right" alt="img" width="50px">
+            </a>
+            <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <!-- ml-auto for right side links and mr auto for right side links !!-->
+                <li class="nav-items">
+                    <a class="nav-link" href="index.html">
+                        ABOUT
+                    </a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="index.html">
+                        CONTACT
+                    </a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="index.html">
+                        SUBSCRIBE
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                        CLICK HERE
+                    </a>
+                <div class="dropdown-menu">
+                    <a href="dark_login.html" class="dropdown-item">LOGIN</a>
+                    <a href="signup.html" class="dropdown-item">SIGNUP</a>
+                    <a href="JavaScript_Basics.html" class="dropdown-item">CALCULATOR</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        function Multiply()
+        {
+            var a = document.getElementById('One').value;
+            var b = document.getElementById('Two').value;
+            alert("Multiplication Of " + a + " and " + b + " = " + (a*b));
+        }
+
+        function Subtract()
+        {
+            var e = document.getElementById('One').value;
+            var f = document.getElementById('Two').value;
+            alert("Subtraction Of " + e + " and " + f + " = " + (e-f));
+        }
+
+        function Divide()
+        {
+            var g = document.getElementById('One').value;
+            var h = document.getElementById('Two').value;
+            //window.alert("2+3=" + (a+b));
+            alert("Division Of " + g + " and " + h + " = " + (g/h));
+        }
+    </script>
+    
+    <center>
+        <br><br><br><br><br>
+        <h3>Enter 1st Number: </h3><input type="number" id="One"><br><br>
+        <h3>Enter 2nd Number: </h3><input type="number" id="Two"><br><br>
+        <button type="button" onclick="return Subtract();">&nbsp;SUBTRACT</button>
+        <button type="button" onclick="return Multiply();">&nbsp;MULTIPLY</button>
+        <button type="button" onclick="return Divide();">&nbsp;DIVIDE</button>
+    </center>
+</body>
+</html>

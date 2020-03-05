@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Forgot Password</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <link rel="stylesheet" href="forgot_pass.css">
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm fixed-top py+1">
+                <a class="nav-brand" href="index.html">
+                    <img src="images.jpg" class="float-right" alt="img" width="50px">
+                </a>
+                <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <!-- ml-auto for right side links and mr auto for right side links !!-->
+                    <li class="nav-items">
+                        <a class="nav-link" href="index.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="index.html">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="index.html">
+                            SUBSCRIBE
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                            CLICK HERE
+                        </a>
+                    <div class="dropdown-menu">
+                        <a href="dark_login.html" class="dropdown-item">LOGIN</a>
+                        <a href="signup.html" class="dropdown-item">SIGNUP</a>
+                        <a href="info_page.html" class="dropdown-item">MORE....</a>
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <form class="box" action="index.html" method="get" onsubmit="alert('Email Sent Successfully !!')">
+            <h1>Forgot Password?</h1>
+            <input type="email" name="" value="" placeholder="Enter Email">
+            <input type="submit" name="" value="SUBMIT">
+            <div id = "container">
+                <a href="reset_pass.html" style = "margin-right:0px; font-size:15px;
+                font-family:Tahoma,Geneva, sans-serif; text-decoration:none">Reset Password</a>
+                <br>
+                <a href="forgot_pass.html" style="margin-right:0px; font-size: 15px;
+                font-family: Tahoma, Geneva , sans-serif;text-decoration:none">Forgot Password</a>
+                <br>
+                <a href="signup.html" style = "margin-right:0px; font-size:15px;
+                font-family:Tahoma,Geneva, sans-serif;text-decoration:none">Sign Up</a>
+            </div>
+        </form>
+    </body>
+</html>
